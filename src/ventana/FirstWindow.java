@@ -1,8 +1,6 @@
 
 package ventana;
 
-import proyecto1.*;
-
 /**
  *
  * @author victorpointud

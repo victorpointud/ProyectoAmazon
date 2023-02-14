@@ -3,8 +3,10 @@ package ventana;
 
 // Importaciones.
 
+import proyectoamazon.Warehouse;
+import proyectoamazon.GlobalVariables;
+import proyectoamazon.NodeWarehouse;
 import javax.swing.JOptionPane;
-import proyecto1.*;
 
 /**
  *

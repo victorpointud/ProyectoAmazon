@@ -6,7 +6,7 @@ package ventana;
 import java.io.File;
 import javax.swing.JFileChooser;
 import proyecto1.Functions;
-import proyecto1.GlobalVariables;
+import proyectoamazon.GlobalVariables;
 import proyecto1.ListWarehouse;
 
 /**

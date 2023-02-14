@@ -5,7 +5,7 @@ import proyecto1.Functions;
 
 // Importaciones.
 
-import proyecto1.GlobalVariables;
+import proyectoamazon.GlobalVariables;
 
 /**
  *

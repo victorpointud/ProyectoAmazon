@@ -1,5 +1,5 @@
 
-package proyecto1;
+package proyectoamazon;
 
 /**
  *

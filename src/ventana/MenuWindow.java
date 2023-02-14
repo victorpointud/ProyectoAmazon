@@ -4,7 +4,7 @@ package ventana;
 // Importaciones.
 
 import proyecto1.Functions;
-import proyecto1.GlobalVariables;
+import proyectoamazon.GlobalVariables;
 
 /**
  *

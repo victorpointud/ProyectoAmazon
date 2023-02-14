@@ -1,18 +1,18 @@
 
-package proyecto1;
+package proyectoamazon;
 
 /**
  *
  * @author victorpointud
  */
-public class NodeVertex {
+public class NodeOfArrays {
     
     // Métodos.
     
     private String[] element;
-    private NodeVertex next;
+    private NodeOfArrays next;
 
-    public NodeVertex(String[] element) {
+    public NodeOfArrays (String[] element) {
         this.next = null;
         this.element = element;
     }
@@ -27,12 +27,12 @@ public class NodeVertex {
         this.element = element;
     }
 
-    public NodeVertex getNext() {
+    public NodeOfArrays getNext() {
         return next;
     }
 
-    public void setNext(NodeVertex next) {
+    public void setNext(NodeOfArrays next) {
         this.next = next;
-    } 
+    }
+    
 }
-

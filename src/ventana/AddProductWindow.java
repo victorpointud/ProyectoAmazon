@@ -3,7 +3,10 @@ package ventana;
 
 // Importaciones.
 
-import proyecto1.*;
+import proyectoamazon.GlobalVariables;
+import proyectoamazon.NodeProduct;
+import proyectoamazon.Product;
+import proyectoamazon.NodeWarehouse;
 
 /**
  *

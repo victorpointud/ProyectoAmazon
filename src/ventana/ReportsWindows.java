@@ -5,8 +5,8 @@ package ventana;
 
 import proyecto1.AdjacencyMatrix;
 import proyecto1.Functions;
-import proyecto1.GlobalVariables;
-import proyecto1.NodeWarehouse;
+import proyectoamazon.GlobalVariables;
+import proyectoamazon.NodeWarehouse;
 import proyecto1.SimpleListWithArray;
 import proyecto1.ListWarehouse;
 
