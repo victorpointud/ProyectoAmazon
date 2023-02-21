@@ -2,7 +2,7 @@
 package ventana;
 
 // Importaciones.
-
+import proyectoamazon.ListWarehouse;
 import proyectoamazon.Warehouse;
 import proyectoamazon.GlobalVariables;
 import proyectoamazon.NodeProduct;
@@ -11,6 +11,11 @@ import proyectoamazon.NodeOfArrays;
 import proyectoamazon.NodeCart;
 import proyectoamazon.NodeWarehouse;
 import javax.swing.JOptionPane;
+import proyectoamazon.ListProducts;
+import proyectoamazon.Cart;
+import proyectoamazon.ProductCart;
+import proyectoamazon.AdjacencyMatrix;
+import proyectoamazon.ListOfArrays;
 
 /**
  *

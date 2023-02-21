@@ -2,11 +2,13 @@
 package ventana;
 
 // Importaciones.
-
+import proyectoamazon.ListOfArrays;
+import proyectoamazon.ListWarehouse;
 import proyectoamazon.Warehouse;
 import proyectoamazon.NodeWarehouse;
 import proyectoamazon.GlobalVariables;
 import javax.swing.JOptionPane;
+
 
 /**
  *

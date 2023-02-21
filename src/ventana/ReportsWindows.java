@@ -3,12 +3,12 @@ package ventana;
 
 // Importaciones.
 
-import proyecto1.AdjacencyMatrix;
-import proyecto1.Functions;
+import proyectoamazon.AdjacencyMatrix;
+import proyectoamazon.Functions;
 import proyectoamazon.GlobalVariables;
 import proyectoamazon.NodeWarehouse;
-import proyecto1.SimpleListWithArray;
-import proyecto1.ListWarehouse;
+import proyectoamazon.SimpleListWithArray;
+import proyectoamazon.ListWarehouse;
 
 /**
  *

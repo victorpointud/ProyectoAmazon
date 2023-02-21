@@ -5,6 +5,8 @@ package ventana;
 
 import proyectoamazon.GlobalVariables;
 import proyectoamazon.NodeProduct;
+import proyectoamazon.Functions;
+import proyectoamazon.ListWarehouse;
 import proyectoamazon.Product;
 import proyectoamazon.NodeWarehouse;
 

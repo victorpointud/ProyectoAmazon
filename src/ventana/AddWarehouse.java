@@ -6,6 +6,8 @@ package ventana;
 import proyectoamazon.Warehouse;
 import proyectoamazon.GlobalVariables;
 import proyectoamazon.NodeWarehouse;
+import proyectoamazon.ListWarehouse;
+import proyectoamazon.ListProducts;
 import javax.swing.JOptionPane;
 
 /**

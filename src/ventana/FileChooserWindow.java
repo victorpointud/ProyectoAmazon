@@ -41,6 +41,7 @@ public class FileChooserWindow extends javax.swing.JFrame {
         FileChooserButton = new javax.swing.JButton();
         NextWindow = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        InfoFileChooserWindow1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,8 +58,8 @@ public class FileChooserWindow extends javax.swing.JFrame {
 
         InfoFileChooserWindow.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         InfoFileChooserWindow.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        InfoFileChooserWindow.setText("Debes elegir un archivo para cargar el programa. ");
-        jPanel1.add(InfoFileChooserWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 370, 80));
+        InfoFileChooserWindow.setText("Luego de elegir el archivo vaya al menú");
+        jPanel1.add(InfoFileChooserWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 370, 80));
 
         FileChooserButton.setText("...");
         FileChooserButton.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +69,7 @@ public class FileChooserWindow extends javax.swing.JFrame {
         });
         jPanel1.add(FileChooserButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 40, -1));
 
-        NextWindow.setText("Ir al menu");
+        NextWindow.setText("Ir al menú");
         NextWindow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NextWindowActionPerformed(evt);
@@ -78,6 +79,11 @@ public class FileChooserWindow extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/filechooser.jpg")));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
+
+        InfoFileChooserWindow1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        InfoFileChooserWindow1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        InfoFileChooserWindow1.setText("Debes elegir un archivo para cargar el programa. ");
+        jPanel1.add(InfoFileChooserWindow1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 370, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
@@ -92,13 +98,14 @@ public class FileChooserWindow extends javax.swing.JFrame {
         
     // Acción Botón (...).
     
-        JFileChooser fc = new JFileChooser();
-        int selection = fc.showOpenDialog(this);
+        JFileChooser file = new JFileChooser();
+        int selection = file.showOpenDialog(this);
         
         if (selection == JFileChooser.APPROVE_OPTION) {
-            File path = fc.getSelectedFile();
+            File path = file.getSelectedFile();
             PathDisplay.setText(path.getAbsolutePath());
         }
+        
     
     // Retorna Vista De Todos Los Archivos Del Sistema Del Usuario Y Lee Un Arvhivo En Caso De Ser Seleccionado.
     }//GEN-LAST:event_FileChooserButtonActionPerformed
@@ -160,6 +167,7 @@ public class FileChooserWindow extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton FileChooserButton;
     private javax.swing.JLabel InfoFileChooserWindow;
+    private javax.swing.JLabel InfoFileChooserWindow1;
     private javax.swing.JButton NextWindow;
     private javax.swing.JTextField PathDisplay;
     private javax.swing.JLabel jLabel1;

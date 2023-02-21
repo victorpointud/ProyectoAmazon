@@ -3,7 +3,7 @@ package ventana;
 
 // Importaciones.
 
-import proyecto1.Graphmaker;
+import proyectoamazon.Graphmaker;
 
 /**
  *

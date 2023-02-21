@@ -1,7 +1,7 @@
 
 package ventana;
 
-import proyecto1.Functions;
+import proyectoamazon.Functions;
 
 // Importaciones.
 
