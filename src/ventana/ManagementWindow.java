@@ -74,13 +74,15 @@ public class ManagementWindow extends javax.swing.JFrame {
         });
         jPanel1.add(Almacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 110, 50));
 
-        AddTitle.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        AddTitle.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        AddTitle.setForeground(new java.awt.Color(0, 0, 0));
         AddTitle.setText("Agregar:");
-        jPanel1.add(AddTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 70, 30));
+        jPanel1.add(AddTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 90, 30));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel1.setText("Gestion De Almacen");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 160, -1));
+        jLabel1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("GESTION DE ALMACENES");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 240, 30));
 
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton1.setText("Menu");
@@ -89,9 +91,9 @@ public class ManagementWindow extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/management.jpg")));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/istockphoto-1264879445-170667a.jpg"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));

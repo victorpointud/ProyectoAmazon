@@ -131,14 +131,17 @@ public class OrderWindow extends javax.swing.JFrame {
         });
         jPanel1.add(QuantityProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 50, 40));
 
+        WarehouseOrderTitle.setForeground(new java.awt.Color(0, 0, 0));
         WarehouseOrderTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         WarehouseOrderTitle.setText("Almacen del pedido");
         jPanel1.add(WarehouseOrderTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 30));
 
+        NameProductOrderTitle.setForeground(new java.awt.Color(0, 0, 0));
         NameProductOrderTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NameProductOrderTitle.setText("Nombre del producto");
         jPanel1.add(NameProductOrderTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 130, 30));
 
+        QuantityProductOrder.setForeground(new java.awt.Color(0, 0, 0));
         QuantityProductOrder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         QuantityProductOrder.setText("Cantidad");
         jPanel1.add(QuantityProductOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, -1, -1));
@@ -151,6 +154,7 @@ public class OrderWindow extends javax.swing.JFrame {
         });
         jPanel1.add(AddProductOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 130, -1));
 
+        ListOfProductsTitle.setForeground(new java.awt.Color(0, 0, 0));
         ListOfProductsTitle.setText("Lista de productos");
         jPanel1.add(ListOfProductsTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, -1, 30));
 
@@ -162,9 +166,11 @@ public class OrderWindow extends javax.swing.JFrame {
         });
         jPanel1.add(NextWindowOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 130, 30));
 
+        QuantityAvailableTitle.setForeground(new java.awt.Color(0, 0, 0));
         QuantityAvailableTitle.setText("Disponibles: ");
         jPanel1.add(QuantityAvailableTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, 90, -1));
 
+        QuantityAvailable.setForeground(new java.awt.Color(0, 0, 0));
         QuantityAvailable.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         QuantityAvailable.setText("0");
         jPanel1.add(QuantityAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 10, -1));
@@ -176,7 +182,7 @@ public class OrderWindow extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 210, 170));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/amazon.png")));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/abstract-background-gradient-abstract-modern-background-for-mobile-apps-free-vector.jpg"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));

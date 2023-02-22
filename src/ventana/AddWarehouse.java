@@ -61,9 +61,10 @@ public class AddWarehouse extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         CaracteristicasAlmacen = new javax.swing.JButton();
+        Menu = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        Menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,16 +74,19 @@ public class AddWarehouse extends javax.swing.JFrame {
                 NombreAlmacenActionPerformed(evt);
             }
         });
-        getContentPane().add(NombreAlmacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 60, 30));
+        getContentPane().add(NombreAlmacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 60, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Agregar Almacen");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Ingrese el nombre del Almacen que desea agregar:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
+        CaracteristicasAlmacen.setForeground(new java.awt.Color(0, 0, 0));
         CaracteristicasAlmacen.setText("Continuar");
         CaracteristicasAlmacen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,21 +95,27 @@ public class AddWarehouse extends javax.swing.JFrame {
         });
         getContentPane().add(CaracteristicasAlmacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 90, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel4.setText("Pulse el boton para continuar con la creación del Almacen");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/addwarehouse.jpg")));
-        jLabel5.setText("Letra del Abecedario en Mayuscula");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 290));
-
+        Menu.setForeground(new java.awt.Color(0, 0, 0));
         Menu.setText("Gestión");
         Menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuActionPerformed(evt);
             }
         });
-        getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+        getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Pulse el boton para continuar con la creación del Almacen");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 320, 20));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Letras del abecedario en mayúscula:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/11fd39c527f08c12b98cea34229b6330.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 290));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -214,5 +224,6 @@ public class AddWarehouse extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

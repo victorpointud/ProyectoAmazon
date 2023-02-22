@@ -42,10 +42,6 @@ public class MenuWindow extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         SaveData = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -53,6 +49,7 @@ public class MenuWindow extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ManagementButton.setBackground(new java.awt.Color(0, 0, 255));
+        ManagementButton.setFont(new java.awt.Font("Roboto Black", 3, 12)); // NOI18N
         ManagementButton.setForeground(new java.awt.Color(255, 255, 255));
         ManagementButton.setText("Gestion");
         ManagementButton.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +60,7 @@ public class MenuWindow extends javax.swing.JFrame {
         jPanel1.add(ManagementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 130, 40));
 
         ReportButtons.setBackground(new java.awt.Color(0, 0, 255));
+        ReportButtons.setFont(new java.awt.Font("Roboto Black", 3, 12)); // NOI18N
         ReportButtons.setForeground(new java.awt.Color(255, 255, 255));
         ReportButtons.setText("Reportes");
         ReportButtons.addActionListener(new java.awt.event.ActionListener() {
@@ -73,6 +71,7 @@ public class MenuWindow extends javax.swing.JFrame {
         jPanel1.add(ReportButtons, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 130, 40));
 
         GetProductsButton.setBackground(new java.awt.Color(0, 0, 255));
+        GetProductsButton.setFont(new java.awt.Font("Roboto Black", 3, 12)); // NOI18N
         GetProductsButton.setForeground(new java.awt.Color(255, 255, 255));
         GetProductsButton.setText("Realizar pedido");
         GetProductsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -88,8 +87,8 @@ public class MenuWindow extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, 20));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Menu de Almacenes");
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Menú de Almacenes");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -102,30 +101,19 @@ public class MenuWindow extends javax.swing.JFrame {
         jLabel4.setText("Gestion de almacenes");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
 
-        SaveData.setBackground(new java.awt.Color(0, 0, 0));
-        SaveData.setForeground(new java.awt.Color(255, 255, 255));
+        SaveData.setBackground(new java.awt.Color(255, 255, 153));
+        SaveData.setForeground(new java.awt.Color(0, 0, 0));
         SaveData.setText("Guardar");
+        SaveData.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SaveData.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveDataActionPerformed(evt);
             }
         });
-        jPanel1.add(SaveData, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
+        jPanel1.add(SaveData, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 70, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/menu.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/v1016-c-08_1-ksh6mza3.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, -1, -1));
-
-        jScrollPane2.setBackground(new java.awt.Color(0, 0, 0));
-        jScrollPane2.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane2.setViewportView(jTextPane1);
-
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
@@ -222,9 +210,5 @@ public class MenuWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

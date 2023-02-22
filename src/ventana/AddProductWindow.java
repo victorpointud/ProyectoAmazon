@@ -77,44 +77,56 @@ public class AddProductWindow extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        TitleWarehouse.setBackground(new java.awt.Color(78, 80, 82));
         TitleWarehouse.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        TitleWarehouse.setForeground(new java.awt.Color(255, 255, 255));
         TitleWarehouse.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TitleWarehouse.setText("Nombre del almacen");
-        jPanel1.add(TitleWarehouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 140, -1));
+        TitleWarehouse.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        TitleWarehouse.setOpaque(true);
+        jPanel1.add(TitleWarehouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 140, 30));
 
         PickWarehouse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PickWarehouseActionPerformed(evt);
             }
         });
-        jPanel1.add(PickWarehouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 120, -1));
+        jPanel1.add(PickWarehouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 120, 30));
 
+        ProductTitle.setBackground(new java.awt.Color(78, 80, 82));
         ProductTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ProductTitle.setForeground(new java.awt.Color(255, 255, 255));
         ProductTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ProductTitle.setText("Nombre del producto");
-        jPanel1.add(ProductTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 140, -1));
+        ProductTitle.setOpaque(true);
+        jPanel1.add(ProductTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 140, 30));
 
         NameProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NameProductActionPerformed(evt);
             }
         });
-        jPanel1.add(NameProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 120, -1));
+        jPanel1.add(NameProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 120, 30));
 
+        QuantityTitle.setBackground(new java.awt.Color(78, 80, 82));
         QuantityTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        QuantityTitle.setForeground(new java.awt.Color(255, 255, 255));
         QuantityTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         QuantityTitle.setText("Cantidad");
-        jPanel1.add(QuantityTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 70, -1));
-        jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 70, -1));
+        QuantityTitle.setOpaque(true);
+        jPanel1.add(QuantityTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 70, 30));
+        jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 70, 30));
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Añadir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, -1, -1));
 
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Gestión");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +135,8 @@ public class AddProductWindow extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/addproduct.png")));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/acastro_STK103__01.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));

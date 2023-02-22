@@ -9,6 +9,7 @@ import proyectoamazon.GlobalVariables;
 import proyectoamazon.NodeWarehouse;
 import proyectoamazon.SimpleListWithArray;
 import proyectoamazon.ListWarehouse;
+import proyectoamazon.Cola;
 
 /**
  *
@@ -81,7 +82,7 @@ public class ReportsWindows extends javax.swing.JFrame {
         });
         jPanel1.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/report.jpg")));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pexels-dana-tentis-370799.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 330));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 330));
