@@ -81,7 +81,7 @@ public class Cola<T> {
     public void printCola(){
         NodoCola<T> nodo = this.primero;
         if (this.primero == null) {
-            System.out.println("La cola esta vacia");;
+            System.out.println("La cola esta vacia");
         }else{
             while(nodo.getSiguiente() != null){
                 System.out.println(nodo.getElemento());
