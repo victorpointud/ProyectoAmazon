@@ -11,13 +11,8 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author victorpointud
- */
-
 public class Functions {
-    
+    //Métodos
     public String readText() {
         String line;
         String Text = "";
@@ -130,7 +125,7 @@ public class Functions {
             }
           return null;
         }
-        
+        //Escribir texto
     public void writeText(ListWarehouse listWarehouse) {
         String amazonText = "Almacenes;\n";
         if (!listWarehouse.isEmpty()) {
@@ -176,7 +171,7 @@ public class Functions {
             JOptionPane.showMessageDialog(null, err);
         }
     }
-    
+    //Añadir al almacen
     public void addWarehouse (ListWarehouse listWarehouse, String name) {
         NodeWarehouse pointer = listWarehouse.getHead();
         boolean letterIsIn = false;

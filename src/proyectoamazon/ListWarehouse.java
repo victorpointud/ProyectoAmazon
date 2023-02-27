@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class ListWarehouse {
+    //Métodos
     private NodeWarehouse head;
     private int length;
 
@@ -18,7 +19,7 @@ public class ListWarehouse {
             this.length = 0;
         }
     }
-
+    //Getters and Setters
     public void setHead(NodeWarehouse head) {
         this.head = head;
     }
@@ -30,7 +31,7 @@ public class ListWarehouse {
     public int getLength() {
         return length;
     }
-    
+    //Insertar al inicio
     public void insertStart(Warehouse element){
         NodeWarehouse node = new NodeWarehouse(element);
         if (isEmpty()) {
@@ -41,7 +42,7 @@ public class ListWarehouse {
         }
         length++;
     }
-    
+    //Insertar al final
     public void insertEnd(Warehouse element) {
         NodeWarehouse node = new NodeWarehouse(element);
         if (isEmpty()) {
@@ -55,11 +56,11 @@ public class ListWarehouse {
         }
         length++;
         }
-        
+        //Si está vacío
     public boolean isEmpty() {
         return getHead() == null;
     }
-    
+    //Imprimir
     public void printList() {
         NodeWarehouse pointer = getHead();
         if (isEmpty()) {
@@ -71,7 +72,7 @@ public class ListWarehouse {
         System.out.println(pointer.getElement());
         }
     }
-    
+    //Eliminar el primero
     public void deleteFirst() {
         NodeWarehouse pointer = getHead();
         if (!isEmpty()) {
@@ -80,7 +81,7 @@ public class ListWarehouse {
         }
     length--;
     }
-    
+    //Eliminar el último
     public void deleteLast() {
         NodeWarehouse pointer = getHead();
         if (!isEmpty()) {
@@ -91,7 +92,7 @@ public class ListWarehouse {
         }
     length--;
     }
-    
+    //Crear la lista de los productos
     public void createProductList () {
         NodeWarehouse pointer = getHead();
         while (pointer != null) {
@@ -102,7 +103,7 @@ public class ListWarehouse {
             }
         }
     }
-    
+    //Obtener la lista de los productos
     public ListProducts getListOfProducts() {
         ListProducts TotalListProducts = new ListProducts(null);
         NodeWarehouse pointer = getHead();
@@ -117,7 +118,7 @@ public class ListWarehouse {
         }
         return TotalListProducts;
     }
-    
+    //Obtener almacenes
     public Warehouse getWarehouse (String name) {
         NodeWarehouse pointer = getHead();
         while (pointer != null) {
@@ -128,7 +129,7 @@ public class ListWarehouse {
         }
         return null;
     }
-    
+    //Obtener el indice de los almacenes
     public int getIndexWarehouse(String WarehouseLetter) {
         int index = 0;
         NodeWarehouse pointerWa = GlobalVariables.getListWarehouse().getHead();
@@ -141,7 +142,7 @@ public class ListWarehouse {
         }
         return -1;
     }
-    
+    //Obtener el último almacen
     public Warehouse getLast() {
         NodeWarehouse pointer = getHead();
         if (!isEmpty()) {

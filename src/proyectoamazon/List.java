@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class List {
+    //Métodos
     private Node head;
     private int length;
 
@@ -18,7 +19,7 @@ public class List {
             this.length = 0;
         }       
     }
-
+    //Getters and Setters
     public void setHead(Node head) {
         this.head = head;
     }
@@ -30,7 +31,7 @@ public class List {
     public int getLength() {
         return length;
     }
-    
+    //Insertar al inicio
     public void insertStart(Object element){
         Node node = new Node(element);
         if (isEmpty()) {
@@ -41,7 +42,7 @@ public class List {
         }
         length++;
     }
-    
+    // Insertar al final
     public void insertEnd(Object element) {
         Node node = new Node(element);
         if (isEmpty()) {
@@ -55,11 +56,11 @@ public class List {
         }
         length++;
         }
-        
+        //Si está vacio
     public boolean isEmpty() {
         return getHead() == null;
     }
-    
+        //Imprimir
     public void printList() {
         Node pointer = getHead();
         if (isEmpty()) {
@@ -71,7 +72,7 @@ public class List {
         System.out.println(pointer.getElement());
         }
     }
-    
+    //Elminar primero
     public void deleteFirst() {
         Node pointer = getHead();
         if (!isEmpty()) {
@@ -80,7 +81,7 @@ public class List {
         }
     length--;
     }
-    
+    //eliminar último
     public void deleteLast() {
         Node pointer = getHead();
         if (!isEmpty()) {

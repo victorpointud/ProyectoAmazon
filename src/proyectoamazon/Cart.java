@@ -7,12 +7,15 @@ import javax.swing.JOptionPane;
  *
  * @author luisarismendi
  */
+
+// Métodos
 public class Cart {
     private NodeCart head;
     private int length;
     String firstWarehouse = null;
     String foundWarehouse = null;
 
+    //Getters and Setters
     public String getFoundWarehouse() {
         return foundWarehouse;
     }
@@ -50,6 +53,7 @@ public class Cart {
         return length;
     }
     
+    // Insertar al inicio
     public void insertStart(ProductCart element){
         NodeCart node = new NodeCart(element);
         if (isEmpty()) {
@@ -61,6 +65,7 @@ public class Cart {
         length++;
     }
     
+    //Insertar al final
     public void insertEnd(ProductCart element) {
         NodeCart node = new NodeCart(element);
         if (isEmpty()) {
@@ -74,11 +79,12 @@ public class Cart {
         }
         length++;
         }
-        
+    
+    //Saber si está vacio
     public boolean isEmpty() {
         return getHead() == null;
     }
-    
+    //Imprimir
         public String printList() {
         NodeCart pointer = getHead();
         String result = "";
@@ -94,7 +100,7 @@ public class Cart {
         }
         return result;
     }
-    
+    //Eliminar primero
     public void deleteFirst() {
         NodeCart pointer = getHead();
         if (!isEmpty()) {
@@ -103,7 +109,7 @@ public class Cart {
         }
     length--;
     }
-    
+    //Eliminar final
     public void deleteLast() {
         NodeCart pointer = getHead();
         if (!isEmpty()) {
@@ -114,7 +120,7 @@ public class Cart {
         }
     length--;
     }
-    
+    //Agregar producto
     public void AddProduct (NodeCart pointerResult) {
         NodeCart pointer = getHead();
         boolean isInList = false;

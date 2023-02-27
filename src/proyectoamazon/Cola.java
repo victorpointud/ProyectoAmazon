@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class Cola<T> {
+    // Métodos.
     private NodoCola<T> primero;
     private NodoCola<T> ultimo;
     private int tamaño;
@@ -16,7 +17,7 @@ public class Cola<T> {
         this.ultimo = null;
         this.tamaño = 0;       
     }
-
+    //Getters and setters
     public T getCabeza() {
         if (this.primero != null){
             return this.primero.getElemento();
@@ -73,11 +74,11 @@ public class Cola<T> {
         }
         return false;
     }
-    
+    //Si esta vacio
     public boolean estaVacio() {
         return getCabeza() == null;
     }
-    
+    // Imprimir
     public void printCola(){
         NodoCola<T> nodo = this.primero;
         if (this.primero == null) {

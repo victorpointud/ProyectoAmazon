@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class ProductCart {
+    //Métodos
     String name;
     int quantitiy;
     int quantityFirstwarehouse = 0;
@@ -15,7 +16,7 @@ public class ProductCart {
     public boolean isWasAvaInSecondWa() {
         return wasAvaInSecondWa;
     }
-
+    //Setters and getters.
     public void setWasAvaInSecondWa(boolean wasAvaInSecondWa) {
         this.wasAvaInSecondWa = wasAvaInSecondWa;
     }

@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class SimpleListWithArray {
+    //Métodos
     private int first;
     private int last;
     private int size;
@@ -17,7 +18,7 @@ public class SimpleListWithArray {
         this.size = 0;
         this.array = new NodeSimpleListWithArray[max];
     }
-
+    //Getters and setters
     public int getFirst() {
         return first;
     }
@@ -33,21 +34,21 @@ public class SimpleListWithArray {
     public void setLast(int last) {
         this.last = last;
     }
-    
+    //Si está vacío
     public boolean isEmpty() {
         return first == -1;
     }
-    
+    //Sí tiene un objeto
     public boolean isFull() {
         return size == this.array.length;
     }
-    
+    //Vacío
     public void empty() {
         this.first = this.last = -1;
         this.size = 0;
         this.array = new NodeSimpleListWithArray[this.array.length];
     }
-    
+    //Obtener el valor
     public String getValue(int x){
         String p = null;
         if (this.isEmpty()){
@@ -66,7 +67,7 @@ public class SimpleListWithArray {
     }
     return p;
     }
-    
+    //Obtener el indice
     public int getIndex(String x){
         for (int i = 0; i < this.getLength(); i++) {
             if (x.equals(this.array[i].getData())){
@@ -75,7 +76,7 @@ public class SimpleListWithArray {
         }
         return -1;
     }
-    
+    //Buscar la casilla vacía
     public int searchEmptySlot() {
         for (int i = 0; i < this.array.length; i++) {
             if (this.array[i] == null) {
@@ -84,7 +85,7 @@ public class SimpleListWithArray {
         }
         return -1;
     }
-    
+    //Añadir al inicio
     public void addAtTheStart(String x) {
         if (!this.isFull()) {
             NodeSimpleListWithArray node = new NodeSimpleListWithArray(x);
@@ -99,7 +100,7 @@ public class SimpleListWithArray {
             this.size++;
         }
     }
-    
+    //añadir al final
     public void addAtTheEnd(String x) {
         if (!this.isFull()) {
             NodeSimpleListWithArray node = new NodeSimpleListWithArray(x);

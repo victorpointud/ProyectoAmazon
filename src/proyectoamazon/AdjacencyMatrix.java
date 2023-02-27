@@ -6,6 +6,7 @@ package proyectoamazon;
  * @author luisarismendi
  */
 
+//Métodos
 public class AdjacencyMatrix {
     private int n;
     private int numberOfEdges;

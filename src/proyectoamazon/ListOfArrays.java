@@ -7,6 +7,7 @@ package proyectoamazon;
  */
 
 public class ListOfArrays {
+    //Métodos
     private NodeOfArrays head;
     private int length;
 
@@ -18,7 +19,7 @@ public class ListOfArrays {
             this.length = 0;
         }       
     }
-
+    //Getters and Setters
     public void setHead(NodeOfArrays head) {
         this.head = head;
     }
@@ -30,7 +31,7 @@ public class ListOfArrays {
     public int getLength() {
         return length;
     }
-    
+    //Insertar al inicio
     public void insertStart(String[] element){
         NodeOfArrays node = new NodeOfArrays(element);
         if (isEmpty()) {
@@ -41,7 +42,7 @@ public class ListOfArrays {
         }
         length++;
     }
-    
+    //Insertar al final
     public void insertEnd(String[] element) {
         NodeOfArrays node = new NodeOfArrays(element);
         if (isEmpty()) {
@@ -55,11 +56,11 @@ public class ListOfArrays {
         }
         length++;
         }
-        
+        //Si está vacío
     public boolean isEmpty() {
         return getHead() == null;
     }
-    
+    //Imprimir
     public void printList() {
         NodeOfArrays pointer = getHead();
         if (isEmpty()) {
@@ -76,7 +77,7 @@ public class ListOfArrays {
 
         }
     }
-    
+    //Eliminar el primero
     public void deleteFirst() {
         NodeOfArrays pointer = getHead();
         if (!isEmpty()) {
@@ -85,7 +86,7 @@ public class ListOfArrays {
         }
     length--;
     }
-    
+    //Eliminar el final
     public void deleteLast() {
         NodeOfArrays pointer = getHead();
         if (!isEmpty()) {
@@ -96,7 +97,7 @@ public class ListOfArrays {
         }
     length--;
     }
-    
+    //Insertar en orden
     public void InsertInOrder (String[] result) {
         if (isEmpty()) {
             insertEnd(result);

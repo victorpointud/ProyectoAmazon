@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
  */
 
 public class ListProducts {
+    //Métodos
     private NodeProduct head;
     private int length;
 
@@ -20,7 +21,7 @@ public class ListProducts {
             this.length = 0;
         }       
     }
-
+    //Getters and Setters
     public void setHead(NodeProduct head) {
         this.head = head;
     }
@@ -32,7 +33,7 @@ public class ListProducts {
     public int getLength() {
         return length;
     }
-    
+    //Insertar al inicio
     public void insertStart(Product element){
         NodeProduct node = new NodeProduct(element);
         if (isEmpty()) {
@@ -43,7 +44,7 @@ public class ListProducts {
         }
         length++;
     }
-    
+    //Insertar al final
     public void insertEnd(Product element) {
         NodeProduct node = new NodeProduct(element);
         if (isEmpty()) {
@@ -57,11 +58,11 @@ public class ListProducts {
         }
         length++;
         }
-        
+        //Si esta vacío
     public boolean isEmpty() {
         return getHead() == null;
     }
-    
+    //Imprimir
         public String printList() {
         NodeProduct pointer = getHead();
         String result = "";
@@ -77,7 +78,7 @@ public class ListProducts {
         }
         return result;
     }
-    
+    //Eliminar primero
     public void deleteFirst() {
         NodeProduct pointer = getHead();
         if (!isEmpty()) {
@@ -86,7 +87,7 @@ public class ListProducts {
         }
     length--;
     }
-    
+    //Eliminar al final
     public void deleteLast() {
         NodeProduct pointer = getHead();
         if (!isEmpty()) {
@@ -97,7 +98,7 @@ public class ListProducts {
         }
     length--;
     }
-    
+    //Añadir producto
     public void AddProduct (NodeProduct pointerResult) {
         NodeProduct pointer = getHead();
         boolean isInList = false;
@@ -120,6 +121,7 @@ public class ListProducts {
         }
     
 }
+    //Obtener el producto por el nombre
     public Product GetProductByName (String name) {
         NodeProduct pointer = getHead();
         while (pointer != null) {
@@ -130,7 +132,7 @@ public class ListProducts {
         }
         return null;
     }
-    
+    //Saber si el producto está disponible
     public boolean ProductIsAvailable (String name, int quantity) {
         NodeProduct pointer = getHead();
         while (pointer != null) {
@@ -141,7 +143,7 @@ public class ListProducts {
         }
         return false;
     }
-    
+    //Si el producto está en el almacen
     public boolean ProductIsIn (String name) {
         NodeProduct pointer = getHead();
         while (pointer != null) {
